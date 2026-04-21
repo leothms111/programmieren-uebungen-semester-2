@@ -1,5 +1,5 @@
 [project]
-name = "oop-in-python"
+name = "programmieren-uebungen"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,10 +7,12 @@ authors = [
     { name = "Leo", email = "leo.thms@gmx.de" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "keyboard>=0.13.5",
+]
 
 [project.scripts]
-oop-in-python = "oop_in_python:main"
+programmieren-uebungen = "programmieren-uebungen:main"
 
 [build-system]
 requires = ["uv_build>=0.9.26,<0.10.0"]
