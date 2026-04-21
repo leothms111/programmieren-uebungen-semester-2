@@ -1,7 +1,7 @@
 [project]
 name = "programmieren-uebungen"
 version = "0.1.0"
-description = "Add your description here"
+description = "Übungen aus den Vorlesungen"
 readme = "README.md"
 authors = [
     { name = "Leo", email = "leo.thms@gmx.de" }
@@ -11,9 +11,5 @@ dependencies = [
     "keyboard>=0.13.5",
 ]
 
-[project.scripts]
-programmieren-uebungen = "programmieren-uebungen:main"
-
-[build-system]
-requires = ["uv_build>=0.9.26,<0.10.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
