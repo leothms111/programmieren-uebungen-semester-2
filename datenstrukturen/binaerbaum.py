@@ -4,7 +4,6 @@ class TreeNode:
         self.left = None
         self.right = None
 
-# --- Traversierungs-Funktionen ---
 
 def preorder(node):
     """Wurzel -> Links -> Rechts"""
@@ -27,8 +26,6 @@ def postorder(node):
         postorder(node.right)
         print(node.value, end=" ")
 
-# --- Erweiterung: Grafische Ausgabe ---
-
 def display_tree(node, level=0, prefix="Root: "):
     """Gibt die Baumstruktur mit Einrückungen aus."""
     if node is not None:
@@ -37,7 +34,6 @@ def display_tree(node, level=0, prefix="Root: "):
             display_tree(node.left, level + 1, "L─── ")
             display_tree(node.right, level + 1, "R─── ")
 
-# --- Hauptprogramm ---
 
 if __name__ == "__main__":
     # 1. Baum manuell aufbauen (Beispiel mit 6 Knoten)
